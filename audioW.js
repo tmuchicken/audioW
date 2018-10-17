@@ -170,9 +170,9 @@ function stopStream(stream) {
         //AudioContextを作成
         var context1  = new AudioContext();
         //sourceの作成
-        var source1 = context.createMediaStreamSource(stream);
+        var source1 = context1.createMediaStreamSource(stream);
         //panner の作成
-        var panner1 = context.createPanner();
+        var panner1 = context1.createPanner();
         source1.connect(panner1);
         //peer1の作成
         var peer1 = context1.createMediaStreamDestination();
