@@ -194,7 +194,7 @@ function stopStream(stream) {
     var source2 = context2.createMediaStreamSource(stream);
     //panner の作成
     var panner2 = context2.createPanner();
-    source2.connect(panner1);
+    source2.connect(panner2);
     //peer1の作成
     var peer2 = context1.createMediaStreamDestination();
 
