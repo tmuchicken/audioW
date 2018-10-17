@@ -168,7 +168,7 @@ function stopStream(stream) {
   ).then(function(stream) {
     console.log('1streamきてる');
     logStream('selectedVideo', stream);
-    localVideo.srcObject = stream;
+    //localVideo.srcObject = stream;
         //AudioContextを作成
         var context1  = new AudioContext();
         //sourceの作成
