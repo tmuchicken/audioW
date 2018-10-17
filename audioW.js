@@ -196,9 +196,9 @@ function stopStream(stream) {
     var panner2 = context2.createPanner();
     source2.connect(panner2);
     //peer1の作成
-    var peer2 = context1.createMediaStreamDestination();
+    var peer2 = context2.createMediaStreamDestination();
 
-    panner2.connect(peer1); //ココの先頭変えるよ
+    panner2.connect(peer2); //ココの先頭変えるよ
     localStream2 = peer2.stream;
    }).catch(function(err){
     console.error('getUserMedia Err:', err);
