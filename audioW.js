@@ -148,6 +148,7 @@ function stopStream(stream) {
     audio: {
      deviceId: audioId,
      googEchoCancellation:false //Google用
+     echoCancellation:false
     }
     };
   
@@ -157,6 +158,7 @@ function stopStream(stream) {
     audio: {
      deviceId: audioId2,
      googEchoCancellation:false //Google用
+     echoCancellation:false
     }
     };
 
